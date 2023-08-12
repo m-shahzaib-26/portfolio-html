@@ -1,0 +1,773 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+:root
+{
+    --main-color: #f85c70;
+}
+.main-page
+{
+    width: 100%;
+    height: 100vh;
+    background: url('./image/2691.jpg');
+    background-size: cover;
+}
+/* MAIN-PAGE ICONS */
+.icons 
+{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: auto;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: whitesmoke;
+}
+.icons i
+{
+    padding: 35px 20px;
+    color: var(--main-color);
+    transition: all .5s;
+}
+.icons i:hover
+{
+    transform: scale(1.3);
+    color: var(--main-color);
+}
+/* MAIN PAGE TITLE SECTION */
+.title
+{
+    width: 100%;
+    height: 80vh;
+    /* border: 1px solid yellow; */
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+}
+.title h2
+{
+    font-weight: lighter;
+}
+.title h1
+{
+    color: var(--main-color);
+    padding: 10px 0;
+    font-weight: bolder;
+}
+.title h3
+{
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+/* MAIN-PAGE RESUME BUTTON */
+.resume
+{
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition: all .5s;
+}
+.resume:hover
+{
+    transform: scale(1.1);
+}
+
+/* DETAILS */
+.navbar
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 10px rgba(54,54,54,.18);
+    position: sticky;
+}
+.home-about
+{
+    display: flex;
+}
+.resume-contact
+{
+    display: flex;
+}
+.personal-image
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid white;
+    box-shadow: 0 1px 10px rgba(54,54,54,.18);
+}
+.links a
+{
+    padding: 0 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-color);
+    transition: all .5s;
+}
+.links a:hover
+{
+    transform: scale(1.1);
+}
+
+/* ABOUT SECTION */
+.personal-details-container
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0;
+}
+.container
+{
+    width: 28%;
+    box-shadow: 0 1px 10px rgba(54,54,54,.18);
+    border-radius: 10px;
+    height: auto;
+    background-color: rgb(244, 244, 244);
+    padding: 30px 20px;
+    text-align: center;
+}
+.container h2
+{
+    font-weight: 500;
+    color: var(--main-color);
+}
+.personal-details-container p
+{
+    padding: 5px 0;
+}
+.personal-info span
+{
+    font-weight: 600;
+}
+
+.who-am-i .fa-brands
+{
+    padding: 10px 5px;
+    font-size: 1.3rem;
+    transition: all .5s;
+}
+.who-am-i .fa-brands:hover
+{
+    transform: scale(1.2);
+} 
+
+/* CONTACT SECTION */
+.contact-section
+{
+    width: 100%;
+    background-color: whitesmoke;
+    height: auto;
+    padding: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-section h2
+{
+    text-align: center;
+    color: var(--main-color);
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.form
+{
+    padding: 0px 20px;
+    width: 60%;
+    height: auto;
+    background-color: white;
+}
+.all-inputs
+{
+    padding: 20px 10px;
+}
+.name-email
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#name,#email
+{
+    flex-grow: 1;
+    padding: 10px 20px;
+}
+#email
+{
+    margin-left: 20px;
+}
+.subject
+{
+    display: flex;
+}
+#subject
+{
+    flex-grow: 1;
+    margin: 25px 0;
+    padding: 10px 20px;
+}
+.text-area
+{
+    display: flex;
+}
+#textarea
+{
+    flex-grow: 1;
+    padding: 10px 20px;
+}
+.end-btn
+{
+    color: white;
+    background-color: #7cc576;
+    border: none;
+    padding: 10px 20px;
+    margin: 15px 5px;
+    transition: all 0.4s;
+}
+.end-btn:hover
+{
+    transform: scale(1.1);
+    background-color: rgb(230, 230, 230);
+    color: #7cc576;
+}
+input,textarea
+{
+    border: .5px solid #a4a4a4;
+}
+
+/* --------------------------------------- */
+/* MEDIA QUERIE */
+@media (min-width: 320px) and (max-width: 480px)
+{
+    /* MAIN-PAGE ICONS */
+    .icons 
+    {
+        font-size: 1.2rem;
+    }
+    .icons i:hover
+    {
+        transform: scale(1.1);
+        color: var(--main-color);
+    }
+    /* MAIN PAGE TITLE SECTION */
+    .title
+    {
+        font-size: 1.1rem;
+    }
+    .title h1
+    {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .title h2
+    {
+        font-weight: lighter;
+    }
+    .title h3
+    {
+        padding-bottom: 20px;
+        font-weight: bold;
+        font-size: .8rem;
+    }
+    /* MAIN-PAGE RESUME BUTTON */
+    .resume
+    {
+        padding: 8px 15px;
+        background-color: var(--main-color);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        transition: all .5s;
+    }
+    .resume:hover
+    {
+        transform: scale(1.1);
+    }
+
+    /* DETAILS SECTION NAVBAR */
+    .navbar
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 5rem;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 1px 10px rgba(54,54,54,.18);
+        position: sticky;
+    }
+    .home-about
+    {
+        display: flex;
+        font-size: .8rem;
+        flex-direction: column;
+    }
+    .resume-contact
+    {
+        display: flex;
+        font-size: .8rem;
+        flex-direction: column;
+    }
+    .personal-image
+    {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        border: 6px solid white;
+        box-shadow: 0 1px 10px rgba(54,54,54,.18);
+    }
+    .links a
+    {
+        padding: 7px 15px;
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--main-color);
+        transition: all .5s;
+    }
+    .links a:hover
+    {
+        transform: scale(1.1);
+    }
+    /* ABOUT SECTION */
+    .personal-details-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+    }
+    .container
+    {
+        width: 90%;
+        box-shadow: 0 1px 10px rgba(54,54,54,.18);
+        border-radius: 10px;
+        height: auto;
+        background-color: rgb(244, 244, 244);
+        padding: 30px 0px;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .container h2
+    {
+        font-weight: 400;
+        color: var(--main-color);
+    }
+    .personal-details-container p
+    {
+        font-size: .8rem;
+    }
+    .personal-info span
+    {
+        font-weight: 600;
+    }
+    .fa-brands
+    {
+        padding: 10px 5px;
+        font-size: 1.3rem;
+        transition: all .5s;
+    }
+    .fa-brands:hover
+    {
+        transform: scale(1.1);
+    }
+    /* CONTACT SECTION */
+    .form
+    {
+        width: 90%;
+        font-size: .8rem;
+        height: auto;
+        background-color: white;
+        padding: 0px 2px;
+        margin: 30px 20px;
+    }
+    .all-inputs
+    {
+        padding: 20px 10px;
+    }
+    .name-email
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    #name,#email
+    {
+        flex-grow: 1;
+        padding: 10px 20px;
+        margin: 10px 0;
+    }
+    #email
+    {
+        margin-bottom: 0px;
+    }
+    #subject
+    {
+        flex-grow: 1;
+        margin-top: 0;
+        padding: 10px 20px;
+    }
+    .text-area
+    {
+        display: flex;
+    }
+    #textarea
+    {
+        /* margin-top: 0; */
+        flex-grow: 1;
+        padding: 10px 20px;
+    }
+    .end-btn
+    {
+        color: white;
+        background-color: #7cc576;
+        border: none;
+        padding: 10px 20px;
+        margin: 15px 5px;
+        transition: all 0.4s;
+    }
+    .end-btn:hover
+    {
+        transform: scale(1.1);
+        background-color: rgb(230, 230, 230);
+        color: #7cc576;
+    }
+    input,textarea
+    {
+        border: .5px solid #a4a4a4;
+    }
+    .ending-buttons
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px)
+{
+    .title
+    {
+        font-size: 1.1rem;
+    }
+    /* DETAILS SECTION NAVBAR */
+    .navbar
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 5rem;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 1px 10px rgba(54,54,54,.18);
+        position: sticky;
+    }
+    .home-about
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .resume-contact
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .personal-image
+    {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        border: 6px solid white;
+        box-shadow: 0 1px 10px rgba(54,54,54,.18);
+    }
+    .links a
+    {
+        padding: 7px 15px;
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--main-color);
+        transition: all .5s;
+    }
+    .links a:hover
+    {
+        transform: scale(1.1);
+    }
+    /* ABOUT SECTION */
+    .personal-details-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+    }
+    .container
+    {
+        width: 90%;
+        box-shadow: 0 1px 10px rgba(54,54,54,.18);
+        border-radius: 10px;
+        height: auto;
+        background-color: rgb(244, 244, 244);
+        padding: 30px 0px;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .container h2
+    {
+        font-weight: 400;
+        color: var(--main-color);
+    }
+    .personal-details-container p
+    {
+        padding: 5px 0;
+    }
+    .personal-info span
+    {
+        font-weight: 600;
+    }
+    .fa-brands
+    {
+        padding: 10px 5px;
+        font-size: 1.3rem;
+        transition: all .5s;
+    }
+    .fa-brands:hover
+    {
+        transform: scale(1.2);
+    }   
+    /* CONTACT SECTION */
+    .form
+    {
+        width: 90%;
+        font-size: .8rem;
+        height: auto;
+        background-color: white;
+        padding: 0px 2px;
+        margin: 30px 20px;
+    }
+    .all-inputs
+    {
+        padding: 20px 10px;
+    }
+    .name-email
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    #name,#email
+    {
+        flex-grow: 1;
+        padding: 10px 20px;
+        margin: 10px 0;
+    }
+    #email
+    {
+        margin-bottom: 0px;
+    }
+    #subject
+    {
+        flex-grow: 1;
+        margin-top: 0;
+        padding: 10px 20px;
+    }
+    .text-area
+    {
+        display: flex;
+    }
+    #textarea
+    {
+        /* margin-top: 0; */
+        flex-grow: 1;
+        padding: 10px 20px;
+    }
+    .end-btn
+    {
+        color: white;
+        background-color: #7cc576;
+        border: none;
+        padding: 10px 20px;
+        margin: 15px 5px;
+        transition: all 0.4s;
+    }
+    .end-btn:hover
+    {
+        transform: scale(1.1);
+        background-color: rgb(230, 230, 230);
+        color: #7cc576;
+    }
+    input,textarea
+    {
+        border: .5px solid #a4a4a4;
+    }
+    .ending-buttons
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px)
+{
+    .icons 
+    {
+        font-size: 1.5rem;
+    }
+    .form
+    {
+        width: 90%;
+        font-size: .8rem;
+        height: auto;
+        background-color: white;
+        padding: 0px 2px;
+        margin: 30px 20px;
+    }
+    .all-inputs
+    {
+        padding: 20px 10px;
+    }
+    .name-email
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    #name,#email
+    {
+        flex-grow: 1;
+        padding: 10px 20px;
+        margin: 10px 0;
+    }
+    #email
+    {
+        margin-bottom: 0px;
+    }
+    #subject
+    {
+        flex-grow: 1;
+        margin-top: 0;
+        padding: 10px 20px;
+    }
+    .text-area
+    {
+        display: flex;
+    }
+    #textarea
+    {
+        /* margin-top: 0; */
+        flex-grow: 1;
+        padding: 10px 20px;
+    }
+    .end-btn
+    {
+        color: white;
+        background-color: #7cc576;
+        border: none;
+        padding: 10px 20px;
+        margin: 15px 5px;
+        transition: all 0.4s;
+    }
+    .end-btn:hover
+    {
+        transform: scale(1.1);
+        background-color: rgb(230, 230, 230);
+        color: #7cc576;
+    }
+    input,textarea
+    {
+        border: .5px solid #a4a4a4;
+    }
+    .ending-buttons
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1025px)
+{
+    .form
+    {
+        width: 90%;
+        font-size: .8rem;
+        height: auto;
+        background-color: white;
+        padding: 0px 2px;
+        margin: 30px 20px;
+    }
+    .all-inputs
+    {
+        padding: 20px 10px;
+    }
+    .name-email
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    #name,#email
+    {
+        flex-grow: 1;
+        padding: 10px 20px;
+        margin: 10px 0;
+    }
+    #email
+    {
+        margin-bottom: 0px;
+    }
+    #subject
+    {
+        flex-grow: 1;
+        margin-top: 0;
+        padding: 10px 20px;
+    }
+    .text-area
+    {
+        display: flex;
+    }
+    #textarea
+    {
+        /* margin-top: 0; */
+        flex-grow: 1;
+        padding: 10px 20px;
+    }
+    .end-btn
+    {
+        color: white;
+        background-color: #7cc576;
+        border: none;
+        padding: 10px 20px;
+        margin: 15px 5px;
+        transition: all 0.4s;
+    }
+    .end-btn:hover
+    {
+        transform: scale(1.1);
+        background-color: rgb(230, 230, 230);
+        color: #7cc576;
+    }
+    input,textarea
+    {
+        border: .5px solid #a4a4a4;
+    }
+    .ending-buttons
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+}
